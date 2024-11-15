@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1visual.css">
+</head>
+<body>
+    <div id="main">
+        <div id="titulo">
+            <h1>Sistema de Controle de Veiculos</h1>
+            <a class="links">Registro Deslocamento</a> | <a class="links" href="veic.html">Cadastro Veiculo</a>
+        </div>
+        <h4>Saida de Veiculo</h4>
+        <div class="resgis">
+            <p class="entrada">Codigo Viagem: <input type="number" id="codigo"></p>
+            <p class="entrada">Placa Veiculo: <input type="text" id="modelo"></p>
+            <p class="entrada">Distancia: <input type="number" id="distancia"></p>
+            <p class="entrada">Destino: <input type="text" id="destino"></p>
+            <p class="entrada">Nome Condutor: <input type="text" id="condutor"></p>
+            
+        </div>
+        <button class="botao" type="button" onclick="resgistroSaida()"><strong>Registrar Saida</strong></button>
+
+        <h4>Chegada Veiculo</h4>
+        <div class="resgis">
+            <p class="entrada">Codigo Viagem: <input type="number" id="codigo1"></p>
+        </div>
+        <button class="botao" type="button" onclick="registroChegada()"><strong>Registrar Chegada</strong></button>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Cod. Viagem</th>
+                    <th>Condutor</th>
+                    <th>Destino</th>
+                    <th>Acao</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="1func.js"></script> </script>
+</body>
+</html>
+    <!--
+    tipo de craga
+    Km/L
+    -->

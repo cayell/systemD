@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1visual.css">
+</head>
+<body>
+    <div id="main">
+        <div id="titulo">
+            <h1>Sistema de Controle de Veiculos</h1>
+            <a class="links" href="1index.html">Regsitro Deslocamento </a> | <a class="links">Cadastro Veiculo</a>
+        </div>
+        <div class="resgis">
+            <p class="entrada">Codigo Veiculo: <input type="number" id="codigoV"></p>
+            <p class="entrada">Modelo: 
+                <select name="modelos" id="modelos">
+                    <option value="0">-----------</option>
+                    <option value="opc1">Onibus</option>
+                    <option value="opc2">Micro-Onibus</option>
+                    <option value="opc3">Van</option>
+                    <option value="opc4">Furgao</option>
+                </select> 
+            </p>
+            <p class="entrada">Placa: <input type="text" id="placa"></p>
+            <button id="botao" type="button" onclick="resgistroSaida()"><strong>Registrar</strong></button>
+        </div>
+        <table >
+            <thead>
+                <tr>
+                    <th>Placa</th>
+                    <th>Modelo</th>
+                    <th>Destino</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="1func.js"></script> </script>
+</body>
+</html>
+    <!--
+    tipo de craga
+    Km/L
+    <input type="text" id="modeloV">
+    -->
