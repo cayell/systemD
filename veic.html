@@ -10,31 +10,32 @@
     <div id="main">
         <div id="titulo">
             <h1>Sistema de Controle de Veiculos</h1>
-            <a class="links" href="index.html">Regsitro Deslocamento </a> | <a class="links">Cadastro Veiculo</a>
+            <a class="links" href="1index.html">Regsitro Deslocamento </a> | <a class="links">Cadastro Veiculo</a>
         </div>
         <div class="resgis">
             <p class="entrada">Codigo Veiculo: <input type="number" id="codigoV"></p>
             <p class="entrada">Modelo: 
-                <select name="modelos" id="modelos">
+                <select name="modelos">
                     <option value="0">-----------</option>
-                    <option value="opc1">Onibus</option>
-                    <option value="opc2">Micro-Onibus</option>
-                    <option value="opc3">Van</option>
-                    <option value="opc4">Furgao</option>
+                    <option value="Onibus">Onibus</option>
+                    <option value="Micro-Onibus">Micro-Onibus</option>
+                    <option value="Van">Van</option>
+                    <option value="Furgao">Furgao</option>
                 </select> 
             </p>
             <p class="entrada">Placa: <input type="text" id="placa"></p>
-            <button id="botao" type="button" onclick="resgistroSaida()"><strong>Registrar</strong></button>
+            <button id="botao" type="button" onclick="cadastroVeiculo()"><strong>Registrar</strong></button>
         </div>
-        <table >
+        <table id="tabelaV">
             <thead>
                 <tr>
-                    <th>Placa</th>
+                    <th>Codigo</th>
                     <th>Modelo</th>
-                    <th>Destino</th>
+                    <th>Placa</th>
+                    <th>Localizaçao</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="bodyt">
 
             </tbody>
 
