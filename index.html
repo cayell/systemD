@@ -12,7 +12,7 @@
             <h1>Sistema de Controle de Veiculos</h1>
             <a class="links">Registro Deslocamento</a> | <a class="links" href="veic.html">Cadastro Veiculo</a>
         </div>
-        <h4>Saida de Veiculo</h4>
+        <h3>Saida de Veiculo</h3>
         <div class="resgis">
             <p class="entrada">Codigo Viagem: <input type="number" id="codigo"></p>
             <p class="entrada">Placa Veiculo: <input type="text" id="modelo"></p>
@@ -21,27 +21,58 @@
             <p class="entrada">Nome Condutor: <input type="text" id="condutor"></p>
             
         </div>
-        <button class="botao" type="button" onclick="resgistroSaida()"><strong>Registrar Saida</strong></button>
+        <button class="botao" type="button" onclick="resgistroSaida()"><strong>Saida para destino</strong></button> | <button class="botao" type="button" onclick="saidaDestino()"><strong>Saida para origem</strong></button>
 
-        <h4>Chegada Veiculo</h4>
+        <h3>Chegada Veiculo</h3>
         <div class="resgis">
             <p class="entrada">Codigo Viagem: <input type="number" id="codigo1"></p>
         </div>
         <button class="botao" type="button" onclick="registroChegada()"><strong>Registrar Chegada</strong></button>
-        <table id="tabela">
-            <thead>
-                <tr>
-                    <th>Cod. Viagem</th>
-                    <th>Condutor</th>
-                    <th>Destino</th>
-                    <th>Acao</th>
-                </tr>
-            </thead>
-            <tbody>
+        <div id="tabela"  style="display: none;">
+            <h4>Em trasito</h4>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Cod. Viagem</th>
+                        <th>Condutor</th>
+                        <th>Destino</th>
+                        <th>Acao</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-            </tbody>
-
+                </tbody>
         </table>
+        </div>
+        <div id="tabela1"  style="display: none;">
+            <h4>No destino</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cod. Viagem</th>
+                        <th>Condutor</th>
+                        <th>Destino</th>
+                        <th>Acao</th>
+                    </tr>
+                </thead>
+                <tbody>
+            </table>
+        </div>
+        <div id="tabela2" style="display: none;">
+            <h4>Finalizadas </h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cod. Viagem</th>
+                        <th>Condutor</th>
+                        <th>Destino</th>
+                        <th>Acao</th>
+                    </tr>
+                </thead>
+                <tbody>
+            </table>
+        </div>
+
     </div>
 
     <script src="1func.js"></script> </script>
