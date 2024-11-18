@@ -64,7 +64,7 @@ h1 {
     margin-top: 5px;
 }
 
-#botao {
+.botao {
     padding: 10px 20px;
     background-color: #72aec4;
     color: white;
@@ -104,4 +104,14 @@ th {
 h4{
     border-bottom: 3px solid  #72aec4;
     text-align: center;
+}
+#tabela, #tabela1, #tabela2{
+    width: 100%;
+}
+h3{
+    border-bottom: 3px solid  white;
+    text-align: center;
+    background-color: #72aec4;
+    border-radius: 4px;
+    padding: 5px;
 }
